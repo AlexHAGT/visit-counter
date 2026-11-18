@@ -31,7 +31,9 @@ because the database is stored in a volume.
   `site` and `api` so that only Caddy is open to the internet (ports 80 and 443), and
   makes every service restart by itself after a crash or a reboot.
 - `Caddyfile`: the Caddy settings. Requests starting with `/api/` go to the API, everything
-  else goes to the site. Caddy gets the HTTPS certificate by itself.
+  else goes to the site. Caddy gets the HTTPS certificate by itself. Requests starting with
+  `/lastfm/` go to my other project, [lastfm-map](https://github.com/AlexHAGT/lastfm-map),
+  which runs on the same server and joins this project's Docker network.
 
 ## Run it on your own computer
 
