@@ -4,3 +4,5 @@ docker_consigne.md
 CLAUDE.md
 # Secrets éventuels (aucun pour le compteur, mais par précaution, comme dans la consigne).
 .env
+# Sauvegarde de la base (créée sur le serveur, copiée sur le PC).
+db-backup.tar.gz
